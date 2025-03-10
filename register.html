@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div class="main">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <form name="form" onsubmit="validateForm(event);">
+                
+                <div>
+                    <label for="name">Name: </label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter Name" required style="height: 30px; width: 300px;"><br><br>
+                </div>
+
+                <div>
+                    <label for="email">Email: </label><br>
+                    <input type="text" id="email" name="email" placeholder="Enter Email" required style="height: 30px; width: 300px;"><br><br>
+                </div>
+
+                <div>
+                    <label for="pass">Password: </label><br>
+                    <input type="password" id="pass" name="password" placeholder="Create Password" required style="height: 30px; width: 300px;"><br><br>
+
+                    <span id="span1" style="color: red;">Must be at least 8 characters</span><br>
+                    <span id="span2" style="color: red;">At least 1 lowercase letter</span><br>
+                    <span id="span3" style="color: red;">At least 1 uppercase letter</span><br>
+                    <span id="span4" style="color: red;">At least 1 special character</span><br>
+                    <span id="span5" style="color: red;">At least 1 digit</span><br><br>
+                </div>
+
+                <div>
+                    <label for="ph">Phone Number: </label><br>
+                    <input type="tel" id="ph" name="phno" placeholder="Enter Mobile Number" required style="height: 30px; width: 300px;"><br><br>
+                </div>
+
+                <div>
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+
+            <p id="alert"></p>
+        </fieldset>
+    </div>
+
+    <script src="registervalidation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

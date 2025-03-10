@@ -1,0 +1,31 @@
+body{
+    background-image: url(./assets/background.png);
+}
+.main{
+    width:800px;
+    height: 250px;
+    
+    display: flex;
+    flex-direction: row;
+    margin-top: 160px;
+    margin-left: 400px;
+    border-radius: 20px;
+}
+
+.main>div{
+    margin-top: 100px;
+    margin-left: 160px;
+
+}
+.main>div>a>button{
+    width: 150px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: rgb(40, 244, 255);
+    color: rgb(255, 0, 106);
+}
+.main>div>a>button:hover{
+    background-color: rgb(2, 165, 94);
+    color: brown;
+
+}

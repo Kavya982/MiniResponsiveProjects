@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(108, 105, 105);
+}
+form,h1{
+    margin-left: 500px;
+    margin-top: 100px;
+}
+form>div>button{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid green;
+    color: red;
+}
+form>div>button:hover{
+    border: 2px solid rgb(0, 4, 128);
+    color: rgb(255, 0, 200);
+    background-color: aquamarine;
+}
